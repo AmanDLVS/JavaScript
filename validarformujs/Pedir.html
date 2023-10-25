@@ -1,0 +1,71 @@
+<script>
+
+  function validar(){
+    if(formu.nombre.value == ""){
+      alert ("Debes introducir un nombre");
+    }else if(formu.apellidos.value == ""){
+      alert("Debes introducir un Apellido");
+    }else if(formu.contrasena.value ==""){
+      alert("Introduzca un valor en el campo password");
+    }else if(formu.dni.value == ""){
+      alert ("Introduzca un valor al dni");
+    }else if (formu.Pedido.value == "")
+    alert ("Introduzca un valor en pedido");
+    else {formu.submit();}
+  }
+
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>web_amancio</title>
+    <link href="css1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1> Pedir</h1>
+
+    
+    <form name= formu action="hola.php" method="post" enctype="multipart/form-data">
+        <div style="background-color: rgb(45, 40, 49); border: 5px black solid;">
+       Nombre <br>
+       <input type="text" name="nombre" value="" size="20" maxlength="30" />
+       <br/>
+    
+        Apellidos <br/>
+       <input type="text" name="apellidos" value="" size="50" maxlength="80" />
+       <br/>
+    
+       Contrase&ntildea <br/>
+       <input type="password" name="contrasena" value="" maxlength="30"  />
+       <br/>
+    
+       DNI <br/>
+      <input type="text" name="dni" value="" size="10" maxlength="9" />
+      <br/>
+     
+      Sexo <br/>
+      <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre <br/>
+      <input type="radio" name="sexo" value="mujer" /> Mujer<br/>
+      <input type="radio" name="Desconocido" value="Desconocido"/> Desconocido
+      <br/>
+    
+    
+      <input name="suscribir" type="checkbox" value="suscribir" checked="checked"/>
+      Suscribirme al bolet&iacuten de novedades
+      <br/><br/>
+      Pedido
+      <input type="text" name="Pedido" value="" size="20" maxlength="400" />
+      <input type="submit" name="enviar" value="Registrar" />
+      <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+      
+    </div>
+      Papeles <input type="file" name="foto" /><br>
+      <input type="button" value="enviar" onclick="validar()">
+    </form> 
+    span> 
+    <span id="back"><h4><a href="index.html">Volver</a></h4></span> 
+</body>
+</html>

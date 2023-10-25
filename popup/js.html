@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>popup</title>
+  <style>
+    body {
+      background-color: #6a7a90;
+    }
+    form {
+      background-color: #b1b6c7;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Autentificacion de edad, concesionario</h1>
+  <h3>En este formulario se encuentran varios scripts, uno que lo comprueba para abrirte una ventana segun tu respuesta
+    y otro que en base a un valor random te puede abrir o no una ventana con publicidad, simulando una pagina real con
+    anuncios(no todos los clicks abren la publicidad)</h3>
+  <h1>Responde la siguiente pregunta:</h1>
+  <form name="pregunta" method="post" enctype="text/plain">
+    <label>¿Cuantos a&ntilde;os tienes?</label>
+    <br>
+    <br>
+    <input type="number" id="res" name="resp">
+    <br>
+
+    <br>
+    <input type="button" value="enviar" onclick="mayoredad()">
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
